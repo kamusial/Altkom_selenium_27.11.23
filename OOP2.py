@@ -7,6 +7,10 @@ class Auto:
         self.spalanie_na_100 = 14
         self.rocznik = 2023 - wiek
 
+    def __str__(self):
+        napis = (f'Auto ma kolor {self.kolor} i jest rocznik {self.rocznik + 3}')
+        return napis
+
     def zasieg(self):
         zasieg = self.ilosc_paliwa / self.spalanie_na_100 * 100 * 0.9
         return round(zasieg)
@@ -25,6 +29,6 @@ class Auto:
 
 moje_auto = Auto('black', 3, 12)
 print(moje_auto.kolor)
-
 print(moje_auto.spalanie_na_100)
 print(moje_auto.zasieg())
+print(moje_auto)
