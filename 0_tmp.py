@@ -11,4 +11,19 @@ except ValueError:
     z = x / y
 
 print(z)
-print('Dalsza czesc programu')
+print('Dalsza'
+      'czesc programu')
+
+
+def my_sample_function(pierwsza, druga, trzecia):
+    return x + y * z
+
+
+my_sample_function(2, 3, 4)
+
+
+'mama'.replace('m','M')
+
+
+
+

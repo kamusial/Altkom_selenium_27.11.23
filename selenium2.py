@@ -10,7 +10,7 @@ def make_screenshot(driver):
     file_name = teraz.strftime('screenshot%d-%M-%S.png')
     driver.get_screenshot_as_file(file_name)
 
-if __name__ == '__main__':
+if __name__ == '__main__':   # wykonaj tylko, gdy plik bezporednio uruchomiony (nie zaimportowany)
     print('PLIK 2')
     driver = webdriver.Chrome()
     driver.get('https://www.saucedemo.com/')
