@@ -9,15 +9,17 @@ def test_login_page():
     driver = webdriver.Chrome()
     page = LoginPage(driver)
     page.open()
-    page.get_info()
+    page.print_page_info()
     page.enter_username('standard_userX')
     page.enter_password('secret_sauce')
     page.click_login()
     sleep(1)
+    page.print_page_info()
     try:
-        assert driver.current_url == 'https://www.saucedemo.com/inventory.html', make_screenshot(driver)
+        assert page.get_current_url() == page.after_login_url, make_screenshot(driver)
     except AssertionError:
         print('Assercja nie przeszła')
+        raise
     else:
         print('assercja przeszła')
     finally:
