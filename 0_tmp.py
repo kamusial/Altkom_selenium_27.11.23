@@ -17,20 +17,34 @@
 #
 # def my_sample_function(pierwsza, druga, trzecia):
 #     return x + y * z
+import base64
 
 #
 # my_sample_function(2, 3, 4)
 #
 #
 # 'mama'.replace('m','M')
+#
+# for i in range(3, 15, 3):
+#     print(i)
+#
+# for i in range(100, -1, -10):
+#     print(i)
+#
+# lista_imion = ['Jagoda', 'Paula', 'Malgorzata', 'Mariusz']
+#
+# for imie in lista_imion:
+#     print(imie)
 
-for i in range(3, 15, 3):
-    print(i)
+import keyring
 
-for i in range(100, -1, -10):
-    print(i)
+keyring.set_password('a', 'b', 'c')
+print(keyring.get_password('a', 'b'))
 
-lista_imion = ['Jagoda', 'Paula', 'Malgorzata', 'Mariusz']
-
-for imie in lista_imion:
-    print(imie)
+# password = 'my_pass'.encode('utf-8')
+# print(password)
+# encoded = base64.b64encode(password)
+# print(encoded)
+# decoded = base64.b64decode(encoded)
+# decoded = decoded.decode('utf-8')
+# print(decoded)

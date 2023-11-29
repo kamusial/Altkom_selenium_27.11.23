@@ -1,3 +1,5 @@
+import base64
+
 from selenium import webdriver
 from selenium4_POM import LoginPage
 from selenium2 import make_screenshot
@@ -17,6 +19,17 @@ for i in range(len(content)):
     content[i] = content[i].split(',')
 del content[0]
 print(content)
+
+my_pass = 'Kamil123'
+pass_utf8 = my_pass.encode('utf-8')
+print(pass_utf8)
+encoded_pass = base64.b64encode(pass_utf8)
+print(encoded_pass)
+
+decoded = base64.b64decode(encoded_pass)
+print(decoded)
+my_pass = decoded.decode('utf-8')
+print(my_pass)
 
 # print(content[4])   # linia
 # print(content[4][2])   # element
@@ -46,33 +59,33 @@ print(content)
 # ]
 #
 test_data = content
-@pytest.mark.parametrize('user, password, url', test_data)
-# @pytest.mark.skip(reason="bo tak")
-# @pytest.mark.skipif(len('piesek') == 6, reason="bo tak")
-def test_login_page(user, password, url):
-    driver = webdriver.Chrome()
-    page = LoginPage(driver)
-    page.open()
-    page.print_page_info()
-    page.enter_username(user)
-    page.enter_password(password)
-    page.click_login()
-#    sleep(1)
-    try:
-        assert driver.current_url == url, make_screenshot(driver)
-    except AssertionError:
-        print('Assercja nie przeszła')
-        raise
-    else:
-        print('assercja przeszła')
-    finally:
-        print('Po asercji')
-        driver.quit()
-
-@pytest.mark.xfail
-def test_default():
-    assert 3 == 4
-
-@pytest.mark.xfail
-def test_default2():
-    assert 3 == 4
+# @pytest.mark.parametrize('user, password, url', test_data)
+# # @pytest.mark.skip(reason="bo tak")
+# # @pytest.mark.skipif(len('piesek') == 6, reason="bo tak")
+# def test_login_page(user, password, url):
+#     driver = webdriver.Chrome()
+#     page = LoginPage(driver)
+#     page.open()
+#     page.print_page_info()
+#     page.enter_username(user)
+#     page.enter_password(password)
+#     page.click_login()
+# #    sleep(1)
+#     try:
+#         assert driver.current_url == url, make_screenshot(driver)
+#     except AssertionError:
+#         print('Assercja nie przeszła')
+#         raise
+#     else:
+#         print('assercja przeszła')
+#     finally:
+#         print('Po asercji')
+#         driver.quit()
+#
+# @pytest.mark.xfail
+# def test_default():
+#     assert 3 == 4
+#
+# @pytest.mark.xfail
+# def test_default2():
+#     assert 3 == 4
