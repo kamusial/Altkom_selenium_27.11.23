@@ -10,3 +10,5 @@ Read port: 56817
 1701266751336	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 DevTools listening on ws://127.0.0.1:56802/devtools/browser/26bd7456-db51-476b-979b-b4e84c00af9d
 1701266782324	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+Exiting due to channel error.
+Exiting due to channel error.

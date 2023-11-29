@@ -15,9 +15,13 @@ test_data = [
 
 @pytest.mark.parametrize('user, password, url', test_data)
 # @pytest.mark.skip(reason="bo tak")
-@pytest.mark.skipif(len('piesek') == 6, reason="bo tak")
+# @pytest.mark.skipif(len('piesek') == 6, reason="bo tak")
 def test_login_page(user, password, url):
-    driver = webdriver.Chrome()
+
+    options = webdriver.ChromeOptions()
+    options.add_argument('--headless')
+
+    driver = webdriver.Chrome(options=options)
     page = LoginPage(driver)
     page.open()
     page.print_page_info()

@@ -4,7 +4,7 @@ Library    SeleniumLibrary
 *** Variables ***
 ${wikipeda login}    RobotTests
 ${wiki password}    RobotFramework
-${error_message}  Podany login lub hasło są nieprawidłowe. Spróbuj jeszcze raz.
+${error_message}  Podany login lub hasło są nieprawidłowe. Spróbuj jeszcze raz..
 
 *** Keywords ***
 
@@ -21,7 +21,6 @@ Log in Wikipedia
     close browser
 
 Unsuccessful login
-Log in Wikipedia
     OPEN BROWSER    https://pl.wikipedia.org
     click element    id:pt-login-2
     input text    id:wpName1    ${wikipeda login}

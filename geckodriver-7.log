@@ -1,0 +1,20 @@
+1701268188520	geckodriver	INFO	Listening on 127.0.0.1:57951
+1701268191598	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57952" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Student\\AppData\\Local\\Temp\\rust_mozprofilee11cBl"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1701268192202	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1701268192382	Marionette	INFO	Listening on port 57964
+WebDriver BiDi listening on ws://127.0.0.1:57952
+Read port: 57964
+1701268192509	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:57952/devtools/browser/b6186733-539b-4006-9c69-511f7dc7c164
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://pl.wikipedia.org."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://pl.wikipedia.org."
+1701268197940	Marionette	INFO	Stopped listening on port 57964
+JavaScript warning: https://pl.wikipedia.org/w/load.php?lang=pl&modules=startup&only=scripts&raw=1&safemode=1&skin=vector-2022, line 4: Script terminated by timeout at:
+addToHead@https://pl.wikipedia.org/w/load.php?lang=pl&modules=startup&only=scripts&raw=1&safemode=1&skin=vector-2022:4:48
+newStyleTag@https://pl.wikipedia.org/w/load.php?lang=pl&modules=startup&only=scripts&raw=1&safemode=1&skin=vector-2022:4:179
+flushCssBuffer@https://pl.wikipedia.org/w/load.php?lang=pl&modules=startup&only=scripts&raw=1&safemode=1&skin=vector-2022:4:300
+
+Dynamically enable window occlusion 1
