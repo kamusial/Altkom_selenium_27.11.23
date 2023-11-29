@@ -36,11 +36,18 @@ for okno in windowNames:
     if okno != currentWindowName:
         driver.switch_to.window(okno)
 
-windowAdresses = []
-for karta in windowNames:
-    driver.switch_to.window(karta)
-    windowAdresses.append([driver.title, karta])
+# windowAdresses = []
+# for karta in windowNames:
+#     driver.switch_to.window(karta)
+#     windowAdresses.append([driver.title, karta])
+# print(windowAdresses)
 
-print(windowAdresses)
-
+driver.switch_to.frame(driver.find_element(By.ID, 'iframeResult'))
+firstName = driver.find_element(By.ID, 'fname')
+if firstName.is_enabled():
+    firstName.clear()
+    firstName.send_keys('Kamil')
+else:
+    print('nie da się kliknąć')
+driver.close()
 driver.quit()
