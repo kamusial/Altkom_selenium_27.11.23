@@ -1,0 +1,19 @@
+1701267219945	geckodriver	INFO	Listening on 127.0.0.1:57272
+1701267222998	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57273" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Student\\AppData\\Local\\Temp\\rust_mozprofileySimE8"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1701267223547	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1701267223678	Marionette	INFO	Listening on port 57282
+WebDriver BiDi listening on ws://127.0.0.1:57273
+Read port: 57282
+1701267223969	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:57273/devtools/browser/f1b3ecc4-d974-4f26-8348-524cbef4ed6a
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://pl.wikipedia.org."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://pl.wikipedia.org."
+1701267232643	Marionette	INFO	Stopped listening on port 57282
+JavaScript warning: https://pl.wikipedia.org/w/load.php?lang=pl&modules=startup&only=scripts&raw=1&skin=vector-2022, line 22: Script terminated by timeout at:
+requestUpdate/hasPendingFlush<@https://pl.wikipedia.org/w/load.php?lang=pl&modules=startup&only=scripts&raw=1&skin=vector-2022:22:621
+
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+Dynamically enable window occlusion 1
